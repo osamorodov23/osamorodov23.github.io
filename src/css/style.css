@@ -20,52 +20,76 @@ div {
  body {
      margin: auto;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 
-naV{
+/* nav{
+    flex: auto;
     width: 100%;
     height: 60px;
-    background: rgb(7, 57, 57);
+    background: rgb(15, 73, 66);
 }
- 
-.logo{
-    color: rgb(255, 255, 255);
-    font-size: 28px;
+
+.logo {
+    color: aliceblue;
+    font-size: 30px;
     line-height: 60px;
     padding-left: 388px;
     float: left;
 }
-
-
-.menu{
+.menu {
     float: left;
-    padding-left: 420px;
+    padding-left: 332px;
 }
-.menu li{
-   
+
+.menu li {
     float: left;
-    line-height: 30px;
+    line-height: 60px;
+    color: aliceblue;
     margin-right: 40px;
     font-size: 16px;
-    text-transform: uppercase;   
-    color: rgb(253, 253, 253);
-    list-style-type: none; /* Убираем маркеры */
- 
+    text-transform:uppercase ;
+} */
 
-}
+
+::-webkit-scrollbar {
+    width: 0;
+  }
+
  .main {
      width:100%;
      height:1000px;
      /* background: url(../img/105964761_274197380330944_7315046208453334440_n.jpg) 90% 100%/auto 85% no-repeat, url(../img/Hrb8.jpg) center/cover no-repeat; */
-     background: url(../img/105964761_274197380330944_7315046208453334440_n.jpg) 90% 50%/auto 85% no-repeat, black;
+     background: url(../img/105964761_274197380330944_7315046208453334440_n.png) 80% 80%/auto 80% no-repeat, rgb(0, 0, 0);
+  
  }
 
  .title_container{
     float: left;
-   margin: 432px 0px 0px 204px;
+   margin: 200px 0px 260px 220px;
    color: rgb(255, 255, 255);
    text-align: center;
+
+   transition-duration: 1000ms;
+   
 }
+
+.title_container input {
+    transition: all 0.3s;
+    transform: scale(1);
+}
+
+
+.title_container input:hover {
+  background: yellow;
+  color: black;
+ 
+}
+ 
+.title_container input:active {
+    transform: scale(1.1);
+}
+
 .title_container h1{
     font-size: 60px;
     font-weight: bold;
@@ -86,7 +110,263 @@ naV{
     color: rgb(173, 225, 217); 
     font-size: 13px;
     padding: 0px 16px ;
+    margin: 5px 14px 0px 14px;
+}
+
+.about_me {
+    width:100%;
+    height:1000px;
+    /* background: url(../img/105964761_274197380330944_7315046208453334440_n.jpg) 90% 100%/auto 85% no-repeat, url(../img/Hrb8.jpg) center/cover no-repeat; */
+    background:  rgb(0, 0, 0);
+    
+}
+
+.about_container {
+    padding-top: 200px;
+    
+    margin-top: -30px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+ 
+ }
+
+ .about_me input {
+    height: 40px;
+    text-align: center;
+    border: 2px solid rgb(173, 225, 217);
+    background: none;
+    border-radius: 5px;
+    color: rgb(173, 225, 217); 
+    font-size: 13px;
+    padding: 0px 16px ;
     margin: 58px 14px 0px 14px;
+ }
+
+ .stick {
+     color: rgb(173, 225, 217);
+     text-align: center;
+     padding-top: 50px;
+     margin-top: 0%;
+     margin-bottom: 10px;
+     
+ }
+
+ .stick2{
+    color: rgb(173, 225, 217);
+ }
+
+ hr {
+    
+    width: 300px;
+    border: none; /* Убираем границу */
+    background-color: rgb(173, 225, 217) ; /* Цвет линии */
+    color: rgb(173, 225, 217); /* Цвет линии для IE6-7 */
+    height: 4px; /* Толщина линии */
+    margin-bottom: 0px;
+   }
+
+.foto {
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    
+}
+
+.skills {
+    background-color: rgb(0, 0, 0);
+
 }
 
 
+
+.skills_container {
+    
+    padding-top: 200px;
+    margin-top: -30px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+
+p {
+    color: aliceblue;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: aliceblue; 
+}
+
+.skills img {
+
+   
+  display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-bottom: 1px;
+    padding: 50px;
+    box-sizing: 10px;
+
+    
+}
+
+.skills_box div {
+  float: left;
+  background-color: rgb(0, 0, 0);
+  height: 330px;
+  width: 25%;
+  
+  box-sizing: border-box;
+  text-align: center;
+  margin-bottom: 350px;
+}
+.skills_box img {
+    border: 2px solid rgb(173, 225, 217);
+    border-radius: 50%;
+
+}
+
+/* .skills_container1,
+.skills_container2,
+.skills_container3,
+.skills_container4  {
+
+    display: flex;
+    margin-bottom: 100px;
+    height: 100%;
+    margin-left: 45px;
+	display: inline-block;
+    text-align: center;
+   
+} */
+
+.case {
+    
+    background-color: black;
+    
+
+}
+
+a {
+    color: rgb(173, 225, 217);
+    text-decoration: none;
+}
+
+a:active {
+    color: blanchedalmond;
+}
+
+
+
+.case img {
+    max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        border: none;
+    
+    
+    
+}
+
+.case_cont_main {
+    background-color: rgb(0, 0, 0);
+    height: 1300px;
+    width: 68%;
+    border: 0px solid rgb(255, 255, 255);
+    margin-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.case1{
+  background-color: rgb(0, 0, 0);
+  border: 0px solid rgb(255, 255, 255);
+  height: 210px;
+  width: 24%;
+}
+
+.case1 button {
+    height: 40px;
+    text-align: center;
+    border: 2px solid rgb(173, 225, 217);
+    background: none;
+    border-radius: px;
+    color: rgb(173, 225, 217); 
+    font-size: 13px;
+    padding: 0px 16px ;
+    
+}
+.case1 button:hover {
+    background: rgb(7, 57, 57);
+    
+}
+
+.case2{
+    background-color: rgb(0, 0, 0);
+    border: 0px solid rgb(255, 255, 255);
+    height: 210px;
+    width: 70%;
+  }
+ 
+  .case0 div{
+   float: left;
+   padding: 10px;
+   margin-left: 10px;
+  }
+
+  .calculator{
+    padding-top: 20px;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    margin-bottom: 0px;
+    height: 650px;
+}
+
+.cal_conteiner {
+    
+    background-color: rgb(0, 0, 0);
+    display: inline-block;
+
+    overflow: hidden;
+    width: 1020px;
+    height: 500;
+    text-align: left;
+    box-sizing: 10px;
+    border: 0px solid rgb(255, 255, 255);
+    
+}
+  
+.cal_conteiner select {
+    width: 1000px;
+    height: 26px;
+}
+
+.cal {
+    color: rgb(255, 0, 0);
+    text-align: center;
+    padding-top: 50px;
+    margin-top: 0%;
+    margin-bottom: 10px;
+}
+
+.calculator hr{
+ margin-bottom: 50px;
+}
+.calculator h3 {
+    color: rgb(173, 225, 217) ;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
